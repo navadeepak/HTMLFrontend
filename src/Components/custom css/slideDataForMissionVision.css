@@ -1,0 +1,35 @@
+/* Example CSS for slide and translate animations */
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes translateIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-0,
+  .animate-translate-0 {
+    animation: slideIn 0.5s ease-out, translateIn 0.5s ease-out;
+  }
+  
+  .animate-slide-1,
+  .animate-translate-1 {
+    animation: slideIn 0.5s ease-out, translateIn 0.5s ease-out;
+  }
+  
+  /* Add more animations for additional indices if needed */
+  

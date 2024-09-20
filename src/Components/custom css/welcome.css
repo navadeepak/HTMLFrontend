@@ -1,0 +1,20 @@
+@property --k {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: false;
+}
+.colorChangeBg{
+    --k: 0;
+    background: linear-gradient(45deg, hsl(calc(var(--k)*1turn), 80%, 65%), 
+    hsl(calc(var(--k)*1turn + 45deg), 80%, 65%),hsl(calc(var(--k)*1turn + 45deg), 80%, 65%));
+    animation: k 30s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: url(#f);
+}
+@keyframes k {
+    to {
+      --k: 1 ;
+    }
+  }

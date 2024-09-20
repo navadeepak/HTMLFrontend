@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+* {
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Rubik", sans-serif; */
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: 'Zoho Puvi Black.ttf';
+  src: url('/Frontend/src/Fonts/Zoho\ Puvi/OpenType-TT/Zoho Puvi Black.ttf'); */
+  /* font-family: "Roboto Condensed", sans-serif; */
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth !important;
+  /* text-transform: capitalize; */
+}
+
+.custom-toast-container {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  /* background-color: black; */
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  /* padding: 100px !important; */
+  display: flex !important;
+  align-items: start !important;
+  justify-content: center !important;
+}
+
+.custom-dialog .p-dialog-content {
+  background-color: white !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+* {
+  /* color: black; */
+  scroll-behavior: smooth;
+}
+
+/* scroll aninmation for dashboard */
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.scroll {
+  animation: scroll 1s 1s infinite ease-in-out;
+}
+
+/* end */
+
+.react-time-picker__inputGroup {
+  font-size: 20px !important;
+  padding: 4px;
+}
+
+.chart-container {
+  position: relative;
+  height: 400px; /* Set the desired height */
+}
+
+.chartjs-legend {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.orange {
+  background-image: url("./assets/orange.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+/* MUI */
+
+.MUIButton {
+  color: black !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  letter-spacing: 1px !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 16px !important;
+  margin: 0 !important;
+  width: fit-content !important;
+  padding: 14px 30px 14px 30px !important ;
+}
+.MUIContent {
+  height: 100px !important;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/* notification */
+.MuiPaper-root{
+  height: 90vh !important;
+  margin-top: 5vh;
+  margin-right: 01vh;
+  border-radius: 20px;
+}
+
+/* time */
+
+.react-time-picker__inputGroup:first-child {
+  height: 50px !important;
+}
+
+/* prime react table action title center */
+
+.p-column-title{
+ width: 100%;
+}
+
+.p-paginator{
+  display: flex !important;
+  flex-direction: row !important;
+  /* flex-wrap: nowrap !important; */
+  align-items: start !important;
+  justify-content: flex-start !important;
+  margin-top: 20px !important;
+}
+/* filter button */
+.p-multiselect-label,.p-button-label {
+  color: #444444 !important;
+}
